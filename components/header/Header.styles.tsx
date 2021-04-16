@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.header`
   text-align: center;
   margin: 4.2667rem auto;
+  max-width: 36rem;
 `;
 
 export const Title = styled.h1`
