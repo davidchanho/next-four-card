@@ -2,10 +2,8 @@ import styled from "styled-components";
 import { Props } from "./Item.types";
 
 export const Container = styled.article<Props>`
-  max-width: 23.3333rem;
-  min-width: 20.7333rem;
-  max-height: 16.6667rem;
-  min-height: 14.8rem;
+  width: clamp(20.7333rem, 4vw, 23.3333rem);
+  height: clamp(14.8rem, 4vw, 16.6667rem);
   box-shadow: 0 1rem 2rem -0.7333rem ${(props) => props.theme.colors.shadow};
   border-radius: 0.5333rem;
   border-top: 0.2667rem solid ${(props) => props.theme.colors[props.color]};

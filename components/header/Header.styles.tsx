@@ -7,14 +7,14 @@ export const Container = styled.header`
 `;
 
 export const Title = styled.h1`
-  font-size: 2.4rem;
+  font-size: clamp(1.6rem, 1vw, 2.4rem);
   letter-spacing: 0.0167rem;
   font-weight: ${(props) => props.theme.fonts.fontWeight.light};
   margin-bottom: 0.9333rem;
 `;
 
 export const Subtitle = styled.h2`
-  font-size: 2.4rem;
+  font-size: clamp(1.6rem, 1vw, 2.4rem);
   letter-spacing: 0.0167rem;
   font-weight: ${(props) => props.theme.fonts.fontWeight.bold};
   margin-bottom: 1.0667rem;
